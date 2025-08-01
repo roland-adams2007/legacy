@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Legacy234 | Paint & Sip</title>
+  </head>
+  <body class="m-0 p-0 bg-black">
+    <!-- Hero Section -->
+    <main id="hero" class="relative h-screen w-full overflow-hidden">
+      <!-- Background Video -->
+      <video
+        class="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
+        src="./assets/paint-video.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+
+      <!-- Overlay -->
+      <div
+        class="fixed top-0 left-0 w-full h-full gradient-overlay z-0 bg-black opacity-30"
+      ></div>
+
+      <!-- Navbar -->
+      <nav
+        class="navbar fixed top-0 left-0 w-full flex justify-between items-center px-8 md:px-20 py-4 z-20 border-b border-white/20"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="./assets/logo.png" alt="logo" class="h-10" />
+        </div>
+
+        <!-- Links -->
+        <div class="flex space-x-5 items-center">
+          <ul
+            class="hidden md:flex items-center space-x-8 text-white font-medium"
+          >
+            <li>
+              <a
+                href="#hero"
+                class="hover:text-orange-300 transition duration-300 cursor-pointer relative group"
+              >
+                Home
+                <span
+                  class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#stats"
+                class="hover:text-orange-300 transition duration-300 cursor-pointer relative group"
+              >
+                Event Stats
+                <span
+                  class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#prizes"
+                class="hover:text-orange-300 transition duration-300 cursor-pointer relative group"
+              >
+                Prizes
+                <span
+                  class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="hover:text-orange-300 transition duration-300 cursor-pointer relative group"
+              >
+                Gallery
+                <span
+                  class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="hover:text-orange-300 transition duration-300 cursor-pointer relative group"
+              >
+                About
+                <span
+                  class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+          </ul>
+
+          <a
+            href="https://tally.so/r/wQllEY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              class="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-6 py-2 rounded-full hover:from-orange-500 hover:to-pink-500 transition duration-300 cursor-pointer shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              Register Now
+            </button>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full text-left text-white px-4"
+      >
+        <div
+          class="grid md:grid-cols-2 gap-10 items-start animate-fade-in w-full max-w-6xl"
+        >
+          <!-- Left: Heading and Buttons -->
+          <div>
+            <h1
+              class="text-6xl md:text-9xl font-black mb-6 bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent flex flex-col leading-none"
+            >
+              <span
+                class="font-extrabold drop-shadow-lg"
+                style="font-weight: 900"
+                >PAINT TALKS</span
+              >
+              <span
+                class="font-extrabold drop-shadow-lg"
+                style="font-weight: 900"
+                >HAPPEN HERE</span
+              >
+            </h1>
+
+            <div class="flex flex-col gap-4 mt-4 w-fit">
+              <a
+                href="https://tally.so/r/wQllEY"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  class="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-8 py-4 rounded-md hover:from-orange-500 hover:to-pink-500 transition duration-300 transform hover:scale-105 shadow-2xl cursor-pointer"
+                >
+                  Register Now
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Description -->
+          <div>
+            <p
+              class="text-xl md:text-2xl leading-relaxed text-gray-200 text-left"
+            >
+              The Legacy234 Paint and Sip Experience is a creativity-first
+              event, bringing together artists, enthusiasts, and visionaries to
+              celebrate self-expression through art.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Event Stats Section -->
+    <section id="stats" class="py-20 bg-gradient-to-b from-black to-gray-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Event
+            <span
+              class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent"
+            >
+              Highlights
+            </span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+            Join thousands of creative minds in Nigeria's biggest paint & sip
+            experience
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Participants -->
+          <div
+            class="text-center p-8 bg-gradient-to-br from-orange-500/10 to-pink-500/10 rounded-2xl border border-orange-400/20 hover:border-orange-400/40 transition-all duration-300 floating"
+          >
+            <div class="text-6xl mb-4">👥</div>
+            <h3 class="text-4xl font-bold text-orange-400 mb-2">1000+</h3>
+            <h4 class="text-xl font-semibold text-white mb-3">Participants</h4>
+            <p class="text-gray-300">
+              A vibrant crowd of artists, art lovers, and creative minds.
+            </p>
+          </div>
+
+          <!-- Canvases -->
+          <div
+            class="text-center p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl border border-purple-400/20 hover:border-purple-400/40 transition-all duration-300 floating"
+            style="animation-delay: 2s"
+          >
+            <div class="text-6xl mb-4">🎨</div>
+            <h3 class="text-4xl font-bold text-purple-400 mb-2">100+</h3>
+            <h4 class="text-xl font-semibold text-white mb-3">Canvases</h4>
+            <p class="text-gray-300">
+              Each participant receives a blank canvas to bring their vision to
+              life.
+            </p>
+          </div>
+
+          <!-- Competition -->
+          <div
+            class="text-center p-8 bg-gradient-to-br from-pink-500/10 to-red-500/10 rounded-2xl border border-pink-400/20 hover:border-pink-400/40 transition-all duration-300 floating"
+            style="animation-delay: 4s"
+          >
+            <div class="text-6xl mb-4">🏆</div>
+            <h3 class="text-4xl font-bold text-pink-400 mb-2">₦950k</h3>
+            <h4 class="text-xl font-semibold text-white mb-3">Prize Pool</h4>
+            <p class="text-gray-300">
+              Amazing cash prizes await the most creative artists!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competition Prizes Section -->
+    <section id="prizes" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Competition
+            <span
+              class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent"
+            >
+              Prizes
+            </span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+            Showcase your artistic talent and win amazing cash prizes!
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- 1st Prize -->
+          <div
+            class="text-center p-8 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl border-2 border-yellow-400 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 transform hover:scale-105"
+          >
+            <div class="text-7xl mb-4">🥇</div>
+            <h3 class="text-3xl font-bold text-yellow-400 mb-2">1st Prize</h3>
+            <h4 class="text-4xl font-bold text-white mb-4">₦500,000</h4>
+            <p class="text-gray-300">The ultimate artistic achievement</p>
+          </div>
+
+          <!-- 2nd Prize -->
+          <div
+            class="text-center p-8 bg-gradient-to-br from-gray-400/20 to-blue-500/20 rounded-2xl border-2 border-gray-400 hover:shadow-2xl hover:shadow-gray-400/20 transition-all duration-300 transform hover:scale-105"
+          >
+            <div class="text-7xl mb-4">🥈</div>
+            <h3 class="text-3xl font-bold text-gray-300 mb-2">2nd Prize</h3>
+            <h4 class="text-4xl font-bold text-white mb-4">₦300,000</h4>
+            <p class="text-gray-300">Excellence in creativity</p>
+          </div>
+
+          <!-- 3rd Prize -->
+          <div
+            class="text-center p-8 bg-gradient-to-br from-orange-600/20 to-red-500/20 rounded-2xl border-2 border-orange-600 hover:shadow-2xl hover:shadow-orange-600/20 transition-all duration-300 transform hover:scale-105"
+          >
+            <div class="text-7xl mb-4">🥉</div>
+            <h3 class="text-3xl font-bold text-orange-500 mb-2">3rd Prize</h3>
+            <h4 class="text-4xl font-bold text-white mb-4">₦150,000</h4>
+            <p class="text-gray-300">Outstanding artistic expression</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-bold px-8 py-4 rounded-full hover:from-yellow-500 hover:to-orange-500 transition duration-300 transform hover:scale-105 shadow-2xl"
+          >
+            Enter Competition
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="py-20 bg-gradient-to-b from-black to-gray-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            What to
+            <span
+              class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent"
+            >
+              Expect
+            </span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+            Your complete paint & sip experience awaits
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="text-center p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl hover:bg-gradient-to-br hover:from-purple-500/20 hover:to-pink-500/20 transition-all duration-300"
+          >
+            <div class="text-5xl mb-4">🎨</div>
+            <h3 class="text-xl font-bold text-white mb-3">Guided Painting</h3>
+            <p class="text-gray-300">
+              Professional artists guide you through each brushstroke
+            </p>
+          </div>
+
+          <div
+            class="text-center p-6 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-xl hover:bg-gradient-to-br hover:from-orange-500/20 hover:to-red-500/20 transition-all duration-300"
+          >
+            <div class="text-5xl mb-4">🍷</div>
+            <h3 class="text-xl font-bold text-white mb-3">
+              Wine & Refreshments
+            </h3>
+            <p class="text-gray-300">
+              Premium wines and refreshing beverages throughout
+            </p>
+          </div>
+
+          <div
+            class="text-center p-6 bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-xl hover:bg-gradient-to-br hover:from-green-500/20 hover:to-teal-500/20 transition-all duration-300"
+          >
+            <div class="text-5xl mb-4">👥</div>
+            <h3 class="text-xl font-bold text-white mb-3">Community</h3>
+            <p class="text-gray-300">
+              Connect with like-minded creative individuals
+            </p>
+          </div>
+
+          <div
+            class="text-center p-6 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-xl hover:bg-gradient-to-br hover:from-blue-500/20 hover:to-indigo-500/20 transition-all duration-300"
+          >
+            <div class="text-5xl mb-4">🎵</div>
+            <h3 class="text-xl font-bold text-white mb-3">Live Music</h3>
+            <p class="text-gray-300">
+              Inspiring background music to fuel your creativity
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Endless Scrolling Gallery Section -->
+    <section
+      id="gallery"
+      class="py-20 bg-gradient-to-b from-black to-gray-900 overflow-hidden"
+    >
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+          Artistic
+          <span
+            class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent"
+            >Moments</span
+          >
+        </h2>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+          Experience the magic of creativity through our previous paint and sip
+          sessions
+        </p>
+      </div>
+
+      <!-- First Row - Scrolling Left -->
+      <div class="relative mb-8">
+        <div class="flex scroll-left">
+          <!-- First set of images -->
+          <div class="flex space-x-8 min-w-max pr-8">
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Paint Session 1</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Creative Minds</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Art & Wine</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-green-400 to-teal-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Community</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Expression</span>
+            </div>
+          </div>
+          <!-- Duplicate set for seamless loop -->
+          <div class="flex space-x-8 min-w-max">
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Paint Session 1</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Creative Minds</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Art & Wine</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-green-400 to-teal-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Community</span>
+            </div>
+            <div
+              class="gallery-item w-80 h-60 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl shadow-2xl flex items-center justify-center"
+            >
+              <span class="text-white text-2xl font-bold">Expression</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row - Scrolling Right -->
+      <div class="relative">
+        <div class="flex scroll-right">
+          <!-- First set of images -->
+          <div class="flex space-x-8 min-w-max pr-8">
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/buhari.jpg"
+                alt="President Buhari"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Buhari</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/jonathan.jpg"
+                alt="President Jonathan"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Jonathan</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/oba.jpg"
+                alt="President Obasonjo"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Obasonjo</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/tinubu.jpg"
+                alt="President Tinubu"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Tinubu</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/yakubu.jpg"
+                alt="President Yakubu"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Yakubu</span
+              >
+            </div>
+          </div>
+
+          <!-- Duplicate set for seamless loop -->
+          <div class="flex space-x-8 min-w-max">
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/buhari.jpg"
+                alt="President Buhari"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Buhari</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/jonathan.jpg"
+                alt="President Jonathan"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Jonathan</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/oba.jpg"
+                alt="President Obasonjo"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Obasonjo</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/tinubu.jpg"
+                alt="President Tinubu"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Tinubu</span
+              >
+            </div>
+
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/yakubu.jpg"
+                alt="President Yakubu"
+                class="gallery-item h-60 w-80 rounded-xl shadow-2xl object-cover flex-shrink-0"
+              />
+              <span class="text-white font-semibold mt-3 text-lg"
+                >President Yakubu</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-black">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            What Artists
+            <span
+              class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent"
+            >
+              Say
+            </span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+            Hear from our amazing community of creative minds
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl border border-purple-400/20"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4"
+              >
+                A
+              </div>
+              <div>
+                <h4 class="text-white font-bold">Adunni Oluwatobi</h4>
+                <p class="text-gray-400 text-sm">Professional Artist</p>
+              </div>
+            </div>
+            <p class="text-gray-300 italic">
+              "Legacy234 Paint & Sip transformed my perspective on community
+              art. The energy was incredible!"
+            </p>
+            <div class="flex text-yellow-400 mt-4">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div
+            class="p-6 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl border border-orange-400/20"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4"
+              >
+                K
+              </div>
+              <div>
+                <h4 class="text-white font-bold">Kemi Adebayo</h4>
+                <p class="text-gray-400 text-sm">Art Enthusiast</p>
+              </div>
+            </div>
+            <p class="text-gray-300 italic">
+              "I never thought I could paint until I attended this event. Now
+              I'm hooked on art!"
+            </p>
+            <div class="flex text-yellow-400 mt-4">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div
+            class="p-6 bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl border border-green-400/20"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-r from-green-400 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4"
+              >
+                C
+              </div>
+              <div>
+                <h4 class="text-white font-bold">Chidi Okafor</h4>
+                <p class="text-gray-400 text-sm">First-time Painter</p>
+              </div>
+            </div>
+            <p class="text-gray-300 italic">
+              "The atmosphere was so welcoming. Perfect blend of creativity,
+              wine, and amazing people!"
+            </p>
+            <div class="flex text-yellow-400 mt-4">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="py-20 bg-gradient-to-b from-black to-gray-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Find
+            <span
+              class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent"
+            >
+              Us
+            </span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+            Join us at our beautiful venue in the heart of Lagos
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Location Info -->
+          <div class="space-y-8">
+            <div
+              class="p-6 bg-gradient-to-br from-orange-500/10 to-pink-500/10 rounded-2xl border border-orange-400/20"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-orange-400 text-3xl mr-4">📍</div>
+                <div>
+                  <h3 class="text-white font-bold text-xl">Event Venue</h3>
+                  <p class="text-gray-300">
+                    Lagos Arts Center, Victoria Island
+                  </p>
+                  <p class="text-gray-400 text-sm">
+                    123 Tiamiyu Savage Street, VI, Lagos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="p-6 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl border border-purple-400/20"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-purple-400 text-3xl mr-4">📅</div>
+                <div>
+                  <h3 class="text-white font-bold text-xl">Event Date</h3>
+                  <p class="text-gray-300">Saturday, March 15th, 2025</p>
+                  <p class="text-gray-400 text-sm">2:00 PM - 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="p-6 bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-2xl border border-green-400/20"
+            >
+              <div class="flex items-center mb-4">
+                <div class="text-green-400 text-3xl mr-4">📱</div>
+                <div>
+                  <h3 class="text-white font-bold text-xl">Contact Us</h3>
+                  <p class="text-gray-300">+234 901 234 5678</p>
+                  <p class="text-gray-400 text-sm">info@legacy234.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="relative">
+            <div
+              class="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl shadow-2xl flex items-center justify-center border border-gray-600"
+            >
+              <div class="text-center text-white">
+                <div class="text-6xl mb-4">🗺️</div>
+                <h3 class="text-2xl font-bold">Interactive Map</h3>
+                <p class="text-lg opacity-90">Lagos Arts Center Location</p>
+                <button
+                  class="mt-4 bg-gradient-to-r from-orange-400 to-pink-400 text-white px-6 py-2 rounded-full hover:from-orange-500 hover:to-pink-500 transition duration-300"
+                >
+                  Get Directions
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+            The
+            <span
+              class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent"
+              >Experience</span
+            >
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <p class="text-gray-300 text-lg leading-relaxed">
+              The Legacy234 Paint & Sip event is an immersive blend of
+              creativity, culture, and community. Whether you're an experienced
+              artist or holding a brush for the first time, this experience
+              welcomes everyone to express themselves freely.
+            </p>
+            <p class="text-gray-300 text-lg leading-relaxed">
+              While enjoying wine or juice, participants follow guided painting
+              sessions in a relaxing and inspiring environment. It's not just
+              about painting—it's about connecting, laughing, letting go, and
+              discovering the beauty of creating something unique.
+            </p>
+            <p class="text-gray-300 text-lg leading-relaxed">
+              Join us and be a part of an unforgettable moment where memories
+              are made and canvases come to life.
+            </p>
+
+            <a
+              href="https://tally.so/r/wQllEY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                class="bg-gradient-to-r from-orange-400 to-pink-400 text-white px-8 py-4 rounded-full hover:from-orange-500 hover:to-pink-500 transition duration-300 transform hover:scale-105 shadow-2xl cursor-pointer"
+              >
+                Join the Experience
+              </button>
+            </a>
+          </div>
+
+          <div class="relative">
+            <img
+              src="./assets/exp.jpg"
+              alt="experience art"
+              class="max-h-100 w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <!-- Logo & Description -->
+          <div class="md:col-span-2">
+            <div class="flex items-center">
+              <img src="./assets/logo.png" alt="logo" class="h-20" />
+            </div>
+            <p class="text-gray-400 mb-4 max-w-md">
+              Creating memories, one brushstroke at a time. Join Nigeria's
+              premier paint & sip experience.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-400 transition duration-300 cursor-pointer"
+              >
+                <span class="text-white">📘</span>
+              </div>
+              <div
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-400 transition duration-300 cursor-pointer"
+              >
+                <span class="text-white">📷</span>
+              </div>
+              <div
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-400 transition duration-300 cursor-pointer"
+              >
+                <span class="text-white">🐦</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#hero"
+                  class="text-gray-400 hover:text-orange-400 transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#stats"
+                  class="text-gray-400 hover:text-orange-400 transition duration-300"
+                  >Event Stats</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-gray-400 hover:text-orange-400 transition duration-300"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#prizes"
+                  class="text-gray-400 hover:text-orange-400 transition duration-300"
+                  >Prizes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-orange-400 transition duration-300"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+            <div class="space-y-2 text-gray-400">
+              <p>📱 +234 901 234 5678</p>
+              <p>✉️ info@legacy234.com</p>
+              <p>📍 Lagos Arts Center, VI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+          <p class="text-gray-500">
+            &copy; 2025 Legacy234. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
