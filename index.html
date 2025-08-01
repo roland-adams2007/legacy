@@ -11,10 +11,11 @@
       .presidents-grid {
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: hidden;
+        overflow: hidden;
         gap: 2rem;
         padding: 2rem 0;
         position: relative;
+        width: 100%;
       }
       .president-card {
         position: relative;
@@ -32,7 +33,7 @@
         box-shadow: 0 8px 24px rgba(255, 166, 0, 0.2);
       }
       .president-card.scrolling {
-        animation: scrollPresidents 20s linear infinite;
+        animation: scrollPresidents 30s linear infinite;
       }
       .current-president {
         border: 2px solid #f97316;
@@ -58,7 +59,7 @@
           transform: translateX(0);
         }
         100% {
-          transform: translateX(-100%);
+          transform: translateX(calc(-200px * 16)); /* Adjust based on number of presidents */
         }
       }
       .president-image {
@@ -76,14 +77,14 @@
       .president-info {
         padding: 1rem;
         text-align: center;
-        background: transparent;
+        background: rgb(36, 35, 35);
         position: relative;
         z-index: 10;
       }
       .president-name {
         font-weight: 600;
         font-size: 1rem;
-        color: #ffffff;
+        color: #ffffff; 
         margin-bottom: 0.5rem;
       }
       .president-years {
@@ -131,7 +132,6 @@
   <body class="m-0 p-0 bg-black">
     <!-- Hero Section -->
     <main id="hero" class="relative h-screen w-full overflow-hidden">
-      <!-- Background Video -->
       <video
         class="fixed top-0 left-0 w-full h-full object-cover z-[-1]"
         src="./assets/paint-splash.mp4"
@@ -143,11 +143,9 @@
       <nav
         class="navbar fixed top-0 left-0 w-full flex justify-between items-center px-8 md:px-20 py-4 z-20 border-b border-white/20"
       >
-        <!-- Logo -->
         <div class="flex items-center">
           <img src="./assets/logo.png" alt="logo" class="h-10" />
         </div>
-        <!-- Links -->
         <div class="flex space-x-5 items-center">
           <ul
             class="hidden md:flex items-center space-x-8 text-white font-medium"
@@ -228,7 +226,6 @@
         <div
           class="grid md:grid-cols-2 gap-10 items-start animate-fade-in w-full max-w-6xl"
         >
-          <!-- Left: Heading and Buttons -->
           <div>
             <h1
               class="text-6xl md:text-9xl font-black mb-6 bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent flex flex-col leading-none"
@@ -258,7 +255,6 @@
               </a>
             </div>
           </div>
-          <!-- Right: Description -->
           <div>
             <p
               class="text-xl md:text-2xl leading-relaxed text-gray-200 text-left"
@@ -289,7 +285,6 @@
           </p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-          <!-- Teams -->
           <div
             class="text-center p-8 bg-gradient-to-br from-orange-500/10 to-pink-500/10 rounded-2xl border border-orange-400/20 hover:border-orange-400/40 transition-all duration-300 floating"
           >
@@ -300,7 +295,6 @@
               100 teams of creative minds painting Nigeria's history.
             </p>
           </div>
-          <!-- Canvases -->
           <div
             class="text-center p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl border border-purple-400/20 hover:border-purple-400/40 transition-all duration-300 floating"
             style="animation-delay: 2s"
@@ -312,7 +306,6 @@
               Each team receives a canvas to capture Nigeria's legacy.
             </p>
           </div>
-          <!-- Winners -->
           <div
             class="text-center p-8 bg-gradient-to-br from-pink-500/10 to-red-500/10 rounded-2xl border border-pink-400/20 hover:border-pink-400/40 transition-all duration-300 floating"
             style="animation-delay: 4s"
@@ -344,7 +337,6 @@
           </p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-          <!-- 1st Prize -->
           <div
             class="text-center p-8 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl border-2 border-yellow-400 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-300 transform hover:scale-105"
           >
@@ -353,7 +345,6 @@
             <h4 class="text-4xl font-bold text-white mb-4">₦1,000,000</h4>
             <p class="text-gray-300">The ultimate artistic achievement</p>
           </div>
-          <!-- 2nd Prize -->
           <div
             class="text-center p-8 bg-gradient-to-br from-gray-400/20 to-blue-500/20 rounded-2xl border-2 border-gray-400 hover:shadow-2xl hover:shadow-gray-400/20 transition-all duration-300 transform hover:scale-105"
           >
@@ -362,7 +353,6 @@
             <h4 class="text-4xl font-bold text-white mb-4">₦750,000</h4>
             <p class="text-gray-300">Excellence in creativity</p>
           </div>
-          <!-- 3rd Prize -->
           <div
             class="text-center p-8 bg-gradient-to-br from-orange-600/20 to-red-500/20 rounded-2xl border-2 border-orange-600 hover:shadow-2xl hover:shadow-orange-600/20 transition-all duration-300 transform hover:scale-105"
           >
@@ -372,7 +362,6 @@
             <p class="text-gray-300">Outstanding artistic expression</p>
           </div>
         </div>
-        <!-- Top 20 Paintings -->
         <div class="text-center mt-12">
           <div
             class="text-center p-8 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl border-2 border-purple-400 hover:shadow-2xl hover:shadow-purple-400/20 transition-all duration-300 transform hover:scale-105 mx-auto max-w-md"
@@ -574,7 +563,6 @@
           </p>
         </div>
         <div class="grid md:grid-cols-2 gap-12">
-          <!-- Location Info -->
           <div class="space-y-8">
             <div
               class="p-6 bg-gradient-to-br from-orange-500/10 to-pink-500/10 rounded-2xl border border-orange-400/20"
@@ -617,7 +605,6 @@
               </div>
             </div>
           </div>
-          <!-- Map Placeholder -->
           <div class="relative">
             <div
               class="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl shadow-2xl flex items-center justify-center border border-gray-600"
@@ -700,7 +687,6 @@
     <footer class="bg-black text-white py-12">
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <!-- Logo & Description -->
           <div class="md:col-span-2">
             <div class="flex items-center">
               <img src="./assets/logo.png" alt="logo" class="h-20" />
@@ -727,7 +713,6 @@
               </div>
             </div>
           </div>
-          <!-- Quick Links -->
           <div>
             <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
             <ul class="space-y-2">
@@ -768,7 +753,6 @@
               </li>
             </ul>
           </div>
-          <!-- Contact Info -->
           <div>
             <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
             <div class="space-y-2 text-gray-400">
@@ -889,27 +873,29 @@
       function loadPresidentsGrid() {
         const grid = document.getElementById("presidentsGrid");
         grid.innerHTML = "";
-        nigerianPresidents.forEach((president) => {
+        // Append presidents twice for seamless looping
+        const allPresidents = [...nigerianPresidents, ...nigerianPresidents];
+        allPresidents.forEach((president, index) => {
           const card = document.createElement("div");
-          const cardClasses = president.isCurrent
+          const cardClasses = president.isCurrent && index < nigerianPresidents.length
             ? "president-card current-president"
             : "president-card scrolling";
           card.className = cardClasses;
           card.innerHTML = `
-      <div class="president-tooltip">${president.name} (${president.years})</div>
-      ${
-        president.isCurrent
-          ? '<div class="current-president-badge">CURRENT</div>'
-          : ""
-      }
-      <div class="president-image">
-        <img src="${president.image}" alt="${president.name}" class="w-full h-full object-cover rounded-md" />
-      </div>
-      <div class="president-info">
-        <div class="president-name">${president.name}</div>
-        <div class="president-years">${president.years}</div>
-      </div>
-    `;
+            <div class="president-tooltip">${president.name} (${president.years})</div>
+            ${
+              president.isCurrent && index < nigerianPresidents.length
+                ? '<div class="current-president-badge">CURRENT</div>'
+                : ""
+            }
+            <div class="president-image">
+              <img src="${president.image}" alt="${president.name}" class="w-full h-full object-cover rounded-md" />
+            </div>
+            <div class="president-info">
+              <div class="president-name">${president.name}</div>
+              <div class="president-years">${president.years}</div>
+            </div>
+          `;
           grid.appendChild(card);
         });
       }
